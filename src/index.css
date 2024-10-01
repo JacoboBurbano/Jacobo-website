@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+:root{
+  --lemon-layer-0: #ffffff;
+  --lemon-layer-1: #fefdfa;
+  --lemon-layer-2: #fdfbf5;
+  --lemon-layer-3: #fcf9f0;
+  --lemon-layer-4: #fbf7eb;
+  --lemon-layer-5: #faf5e6;
+  --lemon-layer-6: #f9f2e1;
+  --lemon-layer-7: #f8f0dc;
+  --lemon-layer-8: #f7eed7;
+  --lemon-layer-9: #f6ecd2;
+  --lemon-layer-10: #f5eacd;
+}
+body{
+  background: var(--lemon-layer-2);
+}
