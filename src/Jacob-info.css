@@ -51,3 +51,7 @@ h1, h2, h3, h4, p{
   background: var(--lemon-layer-8);
   transition: background 1s ease;
 }
+.section-projects{
+  text-align: center;
+  margin: 25px;
+}

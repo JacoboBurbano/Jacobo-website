@@ -1,0 +1,27 @@
+.project{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin: 10px auto;
+    text-align: center;
+    padding: 10px;
+    background: var(--lemon-layer-4);
+    box-shadow: 0 10px 11px rgb(0, 0, 0,0.30);
+    border-radius: 10px;
+}
+.info-project{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.info-project div{
+    padding: 5px;
+    margin: 10px;
+}
+.info-project--image img{
+    width: 100%;
+    border: 3px solid var(--lemon-layer-5);
+}
+.info-project--description{
+    display: flex;
+    align-items: center;
+}
