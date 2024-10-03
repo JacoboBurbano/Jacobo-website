@@ -1,17 +1,21 @@
 .project{
     display: flex;
     flex-direction: column;
-    width: 65%;
+    width: 60%;
     margin: 10px auto;
     text-align: center;
     padding: 10px;
-    background: var(--lemon-layer-4);
-    box-shadow: 0 10px 11px rgb(0, 0, 0,0.30);
     border-radius: 10px;
+    perspective: 1000px;
+}
+.project:hover .info-project{
+    transform: rotateY(180deg);
 }
 .info-project{
-    display: grid;
-    grid-template-columns: 50% 50%;
+    box-shadow: 0 10px 11px rgb(0, 0, 0,0.30);
+    background: var(--lemon-layer-5);
+    transform-style: preserve-3d;
+    transition: transform .8s;
 }
 .info-project div{
     padding: 5px;
@@ -22,6 +26,20 @@
     border: 3px solid var(--lemon-layer-5);
 }
 .info-project--description{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+.info-project--description p{
+    width: 70%;
+}
+.front, .back{
+    backface-visibility: hidden;
+}
+.back{
+    transform: rotateY(180deg);
 }
