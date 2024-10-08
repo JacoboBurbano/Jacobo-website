@@ -1,0 +1,16 @@
+.div-skill{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    width: 60%;
+    margin: 20px auto;
+    padding: 10px;
+}
+.content-skill{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.tecnologies-list{
+    flex-direction: row;
+}

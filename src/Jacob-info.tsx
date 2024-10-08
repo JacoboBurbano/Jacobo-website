@@ -2,6 +2,7 @@ import './Jacob-info.css'
 import PerfilPicture from './images/perfil-image.jpg'
 import { SocialNetworks } from './SocialNetworks'
 import { Projects } from './projects/Projects'
+import { Skills } from './skills/Skills'
 export const Info = () => {
   return (
     <>
@@ -18,6 +19,10 @@ export const Info = () => {
     <section className='section-projects'>
         <h1>Projects</h1>
         <Projects/>
+    </section>
+    <section className='section-skills'>
+        <h1>Skills</h1>
+        <Skills/> 
     </section>
     </>
 

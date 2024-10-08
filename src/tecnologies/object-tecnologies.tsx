@@ -5,6 +5,9 @@ export const colorTecnologies = {
     react: '#61dafb',
     html: '#e34c26',
     css: '#2979ff',
-    mySQL: '#1976d2'
+    mySQL: '#1976d2',
+    django: '#092e20',
+    mongoDB: '#00684A',
+    mariaDB: '#4E629A'
 }
-export type TypeTecnologies = 'javascript' | 'typescript'  | 'python'  | 'react' | 'html' | 'css' | 'mySQL'
+export type TypeTecnologies = 'javascript' | 'typescript'  | 'python'  | 'react' | 'html' | 'css' | 'mySQL'| 'django' | 'mongoDB' | 'mariaDB'

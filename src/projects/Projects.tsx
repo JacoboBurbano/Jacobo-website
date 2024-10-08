@@ -15,7 +15,11 @@ const Project = ({title, img, link, tecnologies}: {title:string, img:string, lin
                     <a href={link}></a>
                 </div>
                 <div className='info-project--description back'>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis voluptatum repellat quis impedit, omnis voluptatibus perspiciatis consequuntur culpa eius quisquam quod velit eveniet commodi reiciendis earum tempora sed totam necessitatibus!</p>
+                    <div className='description'>
+                        <h2>{title}</h2>
+                        <hr />
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis voluptatum repellat quis impedit, omnis voluptatibus perspiciatis consequuntur culpa eius quisquam quod velit eveniet commodi reiciendis earum tempora sed totam necessitatibus!</p>
+                    </div>
                     <Tecnologies tecnologies={tecnologies}/>
                 </div>
             </div>
