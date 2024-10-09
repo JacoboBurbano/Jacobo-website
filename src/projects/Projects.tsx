@@ -20,7 +20,9 @@ const Project = ({title, img, link, tecnologies}: {title:string, img:string, lin
                         <hr />
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis voluptatum repellat quis impedit, omnis voluptatibus perspiciatis consequuntur culpa eius quisquam quod velit eveniet commodi reiciendis earum tempora sed totam necessitatibus!</p>
                     </div>
-                    <Tecnologies tecnologies={tecnologies}/>
+                    <ul className='tecnologies-list__project'>
+                        <Tecnologies tecnologies={tecnologies}/>
+                    </ul>
                 </div>
             </div>
         </div>

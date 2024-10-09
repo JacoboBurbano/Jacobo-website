@@ -13,11 +13,13 @@ const Skill = ({title, content, tecnologies}: InterfaceSkills) => {
     return (
         <div className="div-skill">
             <div className="title-skill">
-                <h2>{title}</h2>
+                <h4>{title}</h4>
             </div>
             <div className="content-skill">
                 <p>{content}</p>
-                <Tecnologies tecnologies={tecnologies}/>
+                <ul className="tecnologies-list__skill">
+                    <Tecnologies tecnologies={tecnologies}/>
+                </ul>
             </div>
         </div>
     )

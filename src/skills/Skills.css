@@ -1,16 +1,35 @@
 .div-skill{
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 20% 80%;
     align-items: center;
-    width: 60%;
+    width: 80%;
     margin: 20px auto;
     padding: 10px;
+    transition: transform .5s, background .5s;
+    border-radius: 5px;
+}
+.div-skill:hover{
+    transform: scale(1.05);
+    background: var(--lemon-layer-3);
+    transition: transform .4s, background .4s;
+}
+.title-skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title-skill h4{
+    transform: rotate(-90deg);
 }
 .content-skill{
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.tecnologies-list{
+.tecnologies-list__skill{
+    list-style: none;
+    display: flex;
     flex-direction: row;
+    align-items: center;
+    padding: 0;
 }
