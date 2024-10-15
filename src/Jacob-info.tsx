@@ -3,9 +3,11 @@ import PerfilPicture from './images/perfil-image.jpg'
 import { SocialNetworks } from './SocialNetworks'
 import { Projects } from './projects/Projects'
 import { Skills } from './skills/Skills'
+import { NavBar } from './navbar/Navbar'
 export const Info = () => {
   return (
     <>
+      <NavBar/>
       <section className='section-info'>
       <div className='div-personal-info'>
         <div className='div-name-picture'>

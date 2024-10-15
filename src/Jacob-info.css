@@ -1,4 +1,4 @@
-h1, h2, h3, h4, p{
+h1, h2, h3, h4, p, body{
   margin: 0;
   padding: 0;
   font-family: "Rubik", sans-serif;
@@ -9,7 +9,8 @@ h1, h2, h3, h4, p{
   width: 50%;
   background: var(--lemon-layer-4);
   border: 3px solid var(--lemon-layer-5);
-  margin: auto;
+  margin: 15px auto;
+  margin-top: 65px;
   border-radius: 10px;
   padding: 5px;
   box-shadow: 0 10px 11px rgb(0, 0, 0,0.30);
@@ -22,6 +23,7 @@ h1, h2, h3, h4, p{
 .div-name-picture{
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .div-name-picture img{
   border-radius: 9999px;
@@ -58,8 +60,6 @@ h1, h2, h3, h4, p{
 }
 .section-skills{
   text-align: center;
-  background: var(--lemon-layer-4);
-  box-shadow: 0 10px 11px rgb(0, 0, 0,0.30);
   padding: 8px;
   width: 70%;
   margin: 40px auto;
