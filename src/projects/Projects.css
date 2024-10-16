@@ -23,7 +23,6 @@
 }
 .info-project--image img{
     width: 100%;
-    border: 3px solid var(--lemon-layer-5);
 }
 .info-project--description{
     position: absolute;
