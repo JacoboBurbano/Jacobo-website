@@ -50,6 +50,16 @@
         position: fixed;
         opacity: .8;
     }
+    .invisible{
+        display: none;
+        opacity: 0;
+    }
+    .visible{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 1;
+    }
     .navbar-list{
         display: none;
     }
