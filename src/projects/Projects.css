@@ -1,3 +1,7 @@
+.separation{
+    padding-top: 1rem;
+    margin-top: 2.5rem;
+}
 .project{
     display: flex;
     flex-direction: column;

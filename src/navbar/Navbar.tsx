@@ -2,8 +2,9 @@ import './Navbar.css'
 import NavImage from '../images/nav.png'
 import { InterfaceItem } from './interface-navbar'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 export const NavBar = () => {
-    const itemsNavbar: InterfaceItem[] = [{name: 'Home', path: '.'}, {name: 'Projects', path: '.'}, {name: 'Skills', path: '.'}]
+    const itemsNavbar: InterfaceItem[] = [{name: 'Home', path: '../'}, {name: 'Projects', path: '../projects'}, {name: 'Skills', path: '../skills'}]
     return (
         <>
             <NavbarResponsive items={itemsNavbar}/>
@@ -50,9 +51,9 @@ const NavbarResponsive = ({items}: {items: InterfaceItem[]}) => {
 const Item = ({name, path}: {name:string, path:string}) => {
     return (
         <li className='item-list'>
-            <a href={path}>
+            <Link to={path}>
                 <p>{name}</p>
-            </a>
+            </Link>
         </li>
     )
 }

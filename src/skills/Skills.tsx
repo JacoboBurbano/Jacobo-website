@@ -1,6 +1,17 @@
 import { InterfaceSkills } from "./interface-skills"
 import { Tecnologies } from "../tecnologies/Tecnologies"
 import './Skills.css'
+import { NavBar } from "../navbar/Navbar"
+export const SkillsPage = () => {
+    return (
+        <>
+            <NavBar/>
+            <div className="separation">
+                <Skills/>
+            </div>
+        </>
+    )
+}
 export const Skills = () => {
     const skillsInfo: InterfaceSkills[] = [{title: 'Frontend', content: 'My develop in frontend began ...', tecnologies: ['javascript', 'css', 'html', 'typescript', 'react']}, {title: 'Backend', content: 'My develop in backend began ...', tecnologies: ['python', 'django', 'mariaDB', 'mySQL', 'mongoDB']}]
     return (

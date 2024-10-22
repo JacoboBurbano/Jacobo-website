@@ -5,6 +5,17 @@ import VirtualJukebox from '../images/vitual-jukebox-capture.png'
 import FitPlace from '../images/fit-place-capture.png'
 import { Tecnologies } from '../tecnologies/Tecnologies'
 import { TypeTecnologies } from '../tecnologies/object-tecnologies'
+import { NavBar } from '../navbar/Navbar'
+export const ProjectsPage = () => {
+    return (
+        <>
+            <NavBar/>
+            <div className='separation'>
+                <Projects />
+            </div>
+        </>
+    )
+}
 const Project = ({title, img, link, tecnologies, color, background}: {title:string, img:string, link:string, tecnologies: TypeTecnologies[], color:string, background:string}) => {
     return(
         <div className='project'>
