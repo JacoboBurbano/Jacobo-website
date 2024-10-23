@@ -13,7 +13,7 @@ export const SkillsPage = () => {
     )
 }
 export const Skills = () => {
-    const skillsInfo: InterfaceSkills[] = [{title: 'Frontend', content: 'My develop in frontend began ...', tecnologies: ['javascript', 'css', 'html', 'typescript', 'react']}, {title: 'Backend', content: 'My develop in backend began ...', tecnologies: ['python', 'django', 'mariaDB', 'mySQL', 'mongoDB']}]
+    const skillsInfo: InterfaceSkills[] = [{title: 'Frontend', content: 'Comencé mi viaje en el desarrollo frontend aprendiendo JavaScript, junto con HTML y CSS, enfocándome en dominar JavaScript a fondo mientras comprendía los conceptos básicos de programación. Este enfoque me permitió desarrollar una base sólida que luego me llevó a aprender TypeScript por su capacidad de hacer el código más manejable y seguro. Finalmente, descubrí React, que se ha convertido en mi herramienta principal para crear aplicaciones web dinámicas y eficientes. Hoy en día, utilizo este stack para construir interfaces modernas y escalables.', tecnologies: ['javascript', 'css', 'html', 'typescript', 'react']}, {title: 'Backend', content: 'Comencé a aprender Python debido a su versatilidad y simplicidad, lo que me permitió cubrir de manera eficiente los conceptos esenciales del desarrollo backend. A medida que profundizaba en este campo, realicé un exhaustivo curso de MySQL mientras simultáneamente aprendía FastAPI, una herramienta ligera y rápida para crear APIs. Más adelante, incorporé el manejo de MariaDB y MongoDB para diversificar mi experiencia con bases de datos relacionales y no relacionales. Finalmente, descubrí Django, que se ha convertido en mi herramienta preferida para construir aplicaciones robustas y completas.', tecnologies: ['python', 'django', 'mariaDB', 'mySQL', 'mongoDB']}]
     return (
         skillsInfo.map(skill => 
             <Skill title={skill.title} content={skill.content} tecnologies={skill.tecnologies}/>
@@ -25,6 +25,7 @@ const Skill = ({title, content, tecnologies}: InterfaceSkills) => {
         <div className="div-skill">
             <div className="title-skill">
                 <h4>{title}</h4>
+                <hr style={{height: "-webkit-fill-available"}} />
             </div>
             <div className="content-skill">
                 <p>{content}</p>

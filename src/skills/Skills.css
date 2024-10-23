@@ -19,6 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: -webkit-fill-available;
 }
 .title-skill h4{
     transform: rotate(-90deg);
@@ -27,6 +28,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 10px;
 }
 .tecnologies-list__skill{
     list-style: none;

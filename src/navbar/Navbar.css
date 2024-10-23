@@ -53,17 +53,16 @@
     .invisible{
         display: none;
         opacity: 0;
+        transition: opacity .6s ease;
     }
     .visible{
         display: flex;
         flex-direction: column;
         align-items: center;
         opacity: 1;
+        transition: opacity 2s ease;
     }
     .navbar-list{
         display: none;
     }
-    /* .nav-image{
-        padding-left: 15px;
-    } */
 }

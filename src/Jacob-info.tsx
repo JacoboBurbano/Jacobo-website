@@ -15,7 +15,7 @@ export const Info = () => {
               <img src={PerfilPicture} alt="" />
               <h1>Manuel Jacobo Burbano Jimenez</h1>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nam minus facilis mollitia, nesciunt cumque veniam ad? Recusandae in dolorem atque! Cumque veniam esse reprehenderit eligendi facilis itaque, tempora porro?</p>
+            <p>¡Hola! Soy Manuel Jacobo Burbano Jiménez, un apasionado autodidacta de 20 años que lleva más de dos años inmerso en el fascinante mundo del desarrollo de software y el aprendizaje automático (machine learning). Mi enfoque se centra en crear soluciones innovadoras mientras sigo expandiendo mis conocimientos y habilidades a través del aprendizaje constante. Siempre busco nuevos retos que me permitan crecer como profesional y contribuir con proyectos significativos.</p>
           </div>
           <SocialNetworks/>
         </section>

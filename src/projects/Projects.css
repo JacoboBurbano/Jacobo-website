@@ -38,7 +38,9 @@
     justify-content: center;
 }
 .info-project--description div{
-    width: 80%;
+    width: 60%;
+    padding: 10px;
+    border-radius: 10px;
 }
 .front, .back{
     backface-visibility: hidden;

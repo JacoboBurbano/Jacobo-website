@@ -16,7 +16,7 @@ export const ProjectsPage = () => {
         </>
     )
 }
-const Project = ({title, img, link, tecnologies, color, background}: {title:string, img:string, link:string, tecnologies: TypeTecnologies[], color:string, background:string}) => {
+const Project = ({title, content,img, link, tecnologies, color, background}: {title:string, content:string, img:string, link:string, tecnologies: TypeTecnologies[], color:string, background:string}) => {
     return(
         <div className='project'>
             <div className="info-project">
@@ -29,7 +29,7 @@ const Project = ({title, img, link, tecnologies, color, background}: {title:stri
                     <div className='description' style={{color, background}}>
                         <h2>{title}</h2>
                         <hr />
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis voluptatum repellat quis impedit, omnis voluptatibus perspiciatis consequuntur culpa eius quisquam quod velit eveniet commodi reiciendis earum tempora sed totam necessitatibus!</p>
+                        <p>{content}</p>
                     </div>
                     <ul className='tecnologies-list__project'>
                         <Tecnologies tecnologies={tecnologies}/>
@@ -40,11 +40,11 @@ const Project = ({title, img, link, tecnologies, color, background}: {title:stri
     )
 }
 export const Projects = () => {
-    const projects: InterfaceProjectStyles[]  = [{title: 'Movies', img: MoviePlace, link: 'https://movie-place.vercel.app/', tecnologies: ['javascript', 'html', 'css'], color: '#FFC107', background: '#FFF9E6'}, {title: 'Fit Place', img: FitPlace, link: 'https://fit-place-six.vercel.app/', tecnologies: ['typescript', 'html', 'css'], color: '#FFCC23', background: '#24110C'}, {title: 'Virtual Jukebox', img: VirtualJukebox, link: 'https://music-history-frontend.vercel.app/', tecnologies: ['react', 'typescript', 'html', 'css', 'python', 'mySQL'], color:'#B8DDFB', background: '#4B7EFE'}]
+    const projects: InterfaceProjectStyles[]  = [{title: 'Movies', img: MoviePlace, link: 'https://movie-place.vercel.app/', tecnologies: ['javascript', 'html', 'css'], color: '#FFC107', background: '#FFF9E6', content:'Este proyecto te permite explorar una amplia variedad de películas, organizadas de manera intuitiva por género. Además, los usuarios pueden consultar la calificación de cada película, lo que facilita la selección de las mejores opciones según sus intereses. El sistema está diseñado para ofrecer una experiencia fluida y visualmente atractiva, ayudando a los cinéfilos a descubrir nuevas películas de manera rápida y eficiente.'}, {title: 'Fit Place', content: 'Esta página web está diseñada para aquellos que buscan mejorar su bienestar físico. Ofrece una variedad de rutinas de ejercicios adaptadas a diferentes niveles, junto con la posibilidad de monitorear cuántas calorías están consumiendo o quemando. Además, destaca la importancia de una alimentación balanceada para mantener una vida saludable. Es un recurso integral para quienes desean adoptar un estilo de vida más activo y equilibrado.', img: FitPlace, link: 'https://fit-place-six.vercel.app/', tecnologies: ['typescript', 'html', 'css'], color: '#FFCC23', background: '#24110C'}, {title: 'Virtual Jukebox', content: 'Esta página web es una enciclopedia musical interactiva donde los usuarios pueden descubrir canciones de sus artistas favoritos, conocer la historia detrás de cada uno, e incluso explorar artistas relacionados. Lo más innovador es que una IA se encarga de agregar y gestionar nuevos artistas, manteniendo la base de datos siempre actualizada. El backend de la plataforma está construido con Django, garantizando robustez y escalabilidad, mientras que el frontend, desarrollado con React, ofrece una experiencia de usuario dinámica y atractiva.', img: VirtualJukebox, link: 'https://music-history-frontend.vercel.app/', tecnologies: ['react', 'typescript', 'html', 'css', 'python', 'mySQL'], color:'#B8DDFB', background: '#4B7EFE'}]
     return (
         <>
             {projects.map(project => 
-                <Project title={project.title} img={project.img} link={project.link} tecnologies={project.tecnologies} color={project.color} background={project.background} key={project.title}/>
+                <Project title={project.title} content={project.content} img={project.img} link={project.link} tecnologies={project.tecnologies} color={project.color} background={project.background} key={project.title}/>
             )}
         </>
     )
