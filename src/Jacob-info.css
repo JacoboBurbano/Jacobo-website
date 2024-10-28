@@ -19,10 +19,6 @@ h1, h2, h3, h4, p, body{
   box-shadow: 0 10px 11px rgb(0, 0, 0,0.30);
   transition: border .6s ease
 }
-.section-info:hover{
-  border: 3px solid var(--lemon-layer-10);
-  transition: border .4s ease;
-}
 .div-name-picture{
   display: flex;
   align-items: center;
@@ -63,7 +59,7 @@ h1, h2, h3, h4, p, body{
 .section-skills{
   text-align: center;
   padding: 8px;
-  width: 70%;
+  width: 80%;
   margin: 40px auto;
   border-radius: 5px;
 }

@@ -49,20 +49,26 @@
         z-index: 500;
         position: fixed;
         opacity: .8;
+        height: 50px;
     }
     .invisible{
-        display: none;
+        /* display: none; */
         opacity: 0;
-        transition: opacity .6s ease;
+        transform: translateY(-195px);
+        transition: opacity .6s ease, transform .9s ease;
     }
     .visible{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         opacity: 1;
-        transition: opacity 2s ease;
+        transform: translateY(0px);
+        transition: opacity 2s ease, transform .6s ease;
     }
     .navbar-list{
         display: none;
+    }
+    .div-items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: fit-content;
     }
 }
