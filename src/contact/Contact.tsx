@@ -1,4 +1,5 @@
 import { SocialNetworks } from "./SocialNetworks"
+import './Contact.css'
 
 export const Contact = ({img, link}: {img:string, link:string}) => {
     return (
@@ -7,11 +8,12 @@ export const Contact = ({img, link}: {img:string, link:string}) => {
         </a>
     )
 }
-const ContactPage = () => {
+export const ContactPage = () => {
     return (
-        <div>
-            <h3>Contact me!</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat iste totam molestias cumque veritatis natus est nam sint accusamus velit, libero iure dolorem dolores corrupti dolor modi, officiis, qui nemo!</p>
+        <div className="div-contact">
+            <h3 className="title-contact">Contact me!</h3>
+            <p className="content-contact">Me considero una persona adaptable y disciplinada, con una pasión por aprender y colaborar en equipo. Si deseas trabajar juntos o tienes alguna pregunta, ¡estaré encantado de ayudar!</p>
+            <big className="arrow-contact">⇣</big>
             <SocialNetworks/>
         </div>
     )

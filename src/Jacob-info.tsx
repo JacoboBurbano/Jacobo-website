@@ -1,9 +1,10 @@
 import './Jacob-info.css'
 import PerfilPicture from './images/perfil-image.jpg'
-import { SocialNetworks } from './SocialNetworks'
+import { SocialNetworks } from './contact/SocialNetworks'
 import { Projects } from './projects/Projects'
 import { Skills } from './skills/Skills'
 import { NavBar } from './navbar/Navbar'
+import { ContactPage } from './contact/Contact'
 export const Info = () => {
   return (
     <>
@@ -27,6 +28,9 @@ export const Info = () => {
     <section className='section-skills'>
         <h1>Skills</h1>
         <Skills/> 
+    </section>
+    <section className='section-contact'>
+        <ContactPage/>
     </section>
     </>
 
