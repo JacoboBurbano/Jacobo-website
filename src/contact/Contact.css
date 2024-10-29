@@ -3,6 +3,7 @@
     text-align: center;
     margin: auto;
     padding: 15px;
+    border: 1px solid var(--lemon-layer-1);
 }
 .title-contact{
     margin: 12px;

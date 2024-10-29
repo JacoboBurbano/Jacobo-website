@@ -28,7 +28,7 @@ const Skill = ({title, content, tecnologies}: InterfaceSkills) => {
                 <hr style={{height: "-webkit-fill-available"}} />
             </div>
             <div className="content-skill">
-                <p>{content}</p>
+                <p className="p-content">{content}</p>
                 <ul className="tecnologies-list__skill">
                     <Tecnologies tecnologies={tecnologies}/>
                 </ul>

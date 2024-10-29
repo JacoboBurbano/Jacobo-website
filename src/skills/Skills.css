@@ -30,6 +30,11 @@
     flex-direction: column;
     padding: 10px;
 }
+.p-content {
+    height: 140px;
+    overflow: scroll;
+    padding: 7px;
+}
 .tecnologies-list__skill{
     list-style: none;
     display: flex;

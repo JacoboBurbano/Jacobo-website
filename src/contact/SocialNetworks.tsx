@@ -9,11 +9,11 @@ export const SocialNetworks = () => {
     return (
       <div className='div-social-networks'>
         <ul className='list-social-networks'>
-          <li>
             {networks.map(network => 
-              <Contact img={network.img} link={network.link} />
+            <li>
+                <Contact img={network.img} link={network.link} />
+            </li>
             )}
-          </li>
         </ul>
       </div>
     )

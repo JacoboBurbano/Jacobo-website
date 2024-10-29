@@ -4,7 +4,8 @@ import { SocialNetworks } from './contact/SocialNetworks'
 import { Projects } from './projects/Projects'
 import { Skills } from './skills/Skills'
 import { NavBar } from './navbar/Navbar'
-import { ContactPage } from './contact/Contact'
+import { ContactUser } from './contact/Contact'
+import { Footer } from './footer/Footer'
 export const Info = () => {
   return (
     <>
@@ -30,9 +31,9 @@ export const Info = () => {
         <Skills/> 
     </section>
     <section className='section-contact'>
-        <ContactPage/>
+        <ContactUser/>
     </section>
+    <Footer/>
     </>
-
   )
 }

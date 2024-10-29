@@ -1,4 +1,5 @@
 import { SocialNetworks } from "./SocialNetworks"
+import { NavBar } from "../navbar/Navbar"
 import './Contact.css'
 
 export const Contact = ({img, link}: {img:string, link:string}) => {
@@ -8,7 +9,7 @@ export const Contact = ({img, link}: {img:string, link:string}) => {
         </a>
     )
 }
-export const ContactPage = () => {
+export const ContactUser = () => {
     return (
         <div className="div-contact">
             <h3 className="title-contact">Contact me!</h3>
@@ -16,5 +17,15 @@ export const ContactPage = () => {
             <big className="arrow-contact">⇣</big>
             <SocialNetworks/>
         </div>
+    )
+}
+export const ContactPage = () => {
+    return (
+        <>
+            <NavBar/>
+            <div className="separation">
+                <ContactUser/>
+            </div>
+        </>
     )
 }

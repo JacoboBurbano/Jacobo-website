@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import { SkillsPage } from './skills/Skills.tsx';
 import { ProjectsPage } from './projects/Projects.tsx';
+import { ContactPage } from './contact/Contact.tsx';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "projects",
     element: <ProjectsPage/>
+  },
+  {
+    path: "contact",
+    element: <ContactPage/>
   }
 ]);
 

@@ -1,0 +1,7 @@
+footer{
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    background: var(--lemon-layer-10);
+    color: var(--lemon-layer-1);
+}

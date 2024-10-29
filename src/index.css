@@ -15,3 +15,25 @@
 body{
   background: var(--lemon-layer-3);
 }
+/* Estilo del scrollbar en general */
+::-webkit-scrollbar {
+  width: 5px;  /* Ancho del scrollbar */
+  height: 5px; /* Alto del scrollbar (para scroll horizontal) */
+}
+
+/* Estilo del track (fondo del scrollbar) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 10px;
+}
+
+/* Estilo del thumb (la parte que se mueve) */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
+
+/* Estilo del thumb al pasar el cursor sobre él */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
