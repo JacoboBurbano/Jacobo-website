@@ -5,7 +5,7 @@ import { Footer } from "../footer/Footer"
 
 export const Contact = ({img, link}: {img:string, link:string}) => {
     return (
-        <a href={link}>
+        <a href={link} target="_blank">
             <img src={img}/>
         </a>
     )

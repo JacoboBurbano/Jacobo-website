@@ -20,12 +20,12 @@ export const ProjectsPage = () => {
 }
 const Project = ({title, content,img, link, tecnologies, color, background}: {title:string, content:string, img:string, link:string, tecnologies: TypeTecnologies[], color:string, background:string}) => {
     return(
-        <div className='project'>
+        <a href={link} style={{textDecoration:'none'}} target='_blank'>
+            <div className='project'>
             <div className="info-project">
                 <div className='info-project--image front' style={{color, background}}>
                     <h2>{title}</h2>
                     <img src={img} alt="project-capture" />
-                    <a href={link}></a>
                 </div>
                 <div className='info-project--description back' style={{backgroundImage: `url(${img})`, backgroundSize: 'cover', width: '100%'}}>
                     <div className='description' style={{color, background}}>
@@ -38,7 +38,8 @@ const Project = ({title, content,img, link, tecnologies, color, background}: {ti
                     </ul>
                 </div>
             </div>
-        </div>
+            </div>
+        </a>
     )
 }
 export const Projects = () => {
