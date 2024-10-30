@@ -1,6 +1,7 @@
 import { SocialNetworks } from "./SocialNetworks"
 import { NavBar } from "../navbar/Navbar"
 import './Contact.css'
+import { Footer } from "../footer/Footer"
 
 export const Contact = ({img, link}: {img:string, link:string}) => {
     return (
@@ -12,7 +13,7 @@ export const Contact = ({img, link}: {img:string, link:string}) => {
 export const ContactUser = () => {
     return (
         <div className="div-contact">
-            <h3 className="title-contact">Contact me!</h3>
+            <h1 className="title-contact">Contact me!</h1>
             <p className="content-contact">Me considero una persona adaptable y disciplinada, con una pasión por aprender y colaborar en equipo. Si deseas trabajar juntos o tienes alguna pregunta, ¡estaré encantado de ayudar!</p>
             <big className="arrow-contact">⇣</big>
             <SocialNetworks/>
@@ -25,6 +26,9 @@ export const ContactPage = () => {
             <NavBar/>
             <div className="separation">
                 <ContactUser/>
+            </div>
+            <div className="div-footer">
+                <Footer/>
             </div>
         </>
     )

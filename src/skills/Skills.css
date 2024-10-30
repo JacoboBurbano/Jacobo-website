@@ -1,8 +1,14 @@
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
 .div-skill{
     display: grid;
     grid-template-columns: 20% 80%;
     align-items: center;
-    width: 60%;
+    width: 45%;
     margin: 20px auto;
     padding: 10px;
     transition: transform .5s, background .5s;

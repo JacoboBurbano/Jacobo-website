@@ -2,6 +2,7 @@ footer{
     margin: auto;
     padding: 10px;
     text-align: center;
-    background: var(--lemon-layer-10);
+    background: var(--lemon-layer-11);
     color: var(--lemon-layer-1);
+    border: 1px solid var(--lemon-layer-1);
 }

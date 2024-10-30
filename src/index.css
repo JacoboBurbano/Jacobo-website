@@ -11,6 +11,7 @@
   --lemon-layer-8: #f7eed7;
   --lemon-layer-9: #f6ecd2;
   --lemon-layer-10: #f5eacd;
+  --lemon-layer-11: #fcd6a8;
 }
 body{
   background: var(--lemon-layer-3);

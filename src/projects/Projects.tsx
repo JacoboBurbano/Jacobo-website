@@ -6,6 +6,7 @@ import FitPlace from '../images/fit-place-capture.png'
 import { Tecnologies } from '../tecnologies/Tecnologies'
 import { TypeTecnologies } from '../tecnologies/object-tecnologies'
 import { NavBar } from '../navbar/Navbar'
+import { Footer } from '../footer/Footer'
 export const ProjectsPage = () => {
     return (
         <>
@@ -13,6 +14,7 @@ export const ProjectsPage = () => {
             <div className='separation'>
                 <Projects />
             </div>
+            <Footer/>
         </>
     )
 }
@@ -21,7 +23,7 @@ const Project = ({title, content,img, link, tecnologies, color, background}: {ti
         <div className='project'>
             <div className="info-project">
                 <div className='info-project--image front' style={{color, background}}>
-                    <h1>{title}</h1>
+                    <h2>{title}</h2>
                     <img src={img} alt="project-capture" />
                     <a href={link}></a>
                 </div>

@@ -59,7 +59,7 @@
     }
     .visible{
         opacity: 1;
-        transform: translateY(0px);
+        transform: translateY(4px);
         transition: opacity 2s ease, transform .6s ease;
     }
     .navbar-list{
@@ -70,5 +70,8 @@
         flex-direction: column;
         align-items: center;
         width: fit-content;
+        background-color: rgba(255, 255, 255, 0.33);
+        border: 1px solid var(--lemon-layer-6);
+        /* backdrop-filter: blur(60px); */
     }
 }
