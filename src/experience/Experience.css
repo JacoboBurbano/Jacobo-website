@@ -1,0 +1,14 @@
+.experience{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+}
+.div-platform{
+    padding: 10px;
+}
+.img-logo{
+    width: 50px;
+}

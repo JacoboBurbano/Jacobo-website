@@ -24,7 +24,7 @@ const NavbarDefault = ({items}: {items: InterfaceItem[]}) => {
     )
 }
 const NavbarResponsive = ({items}: {items: InterfaceItem[]}) => {
-    let [isVisible, setVisible] = useState<'invisible' | 'visible'>('invisible')
+    let [isVisible, setVisible] = useState<'invisible'|'visible'>('invisible')
     const handleClick = () => {
         switch (isVisible) {
             case 'invisible':

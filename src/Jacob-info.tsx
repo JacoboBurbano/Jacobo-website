@@ -6,6 +6,7 @@ import { Skills } from './skills/Skills'
 import { NavBar } from './navbar/Navbar'
 import { ContactUser } from './contact/Contact'
 import { Footer } from './footer/Footer'
+import { Experience } from './experience/Experience'
 export const Info = () => {
   return (
     <>
@@ -29,6 +30,9 @@ export const Info = () => {
     <section className='section-skills'>
         <h1>Skills</h1>
         <Skills/> 
+    </section>
+    <section className='section-experience'>
+        <Experience/>
     </section>
     <section className='section-contact'>
         <ContactUser/>
