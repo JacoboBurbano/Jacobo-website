@@ -1,14 +1,51 @@
 .experience{
-    width: 95%;
+    text-align: center;
+    margin: 20px;
+}
+.experience h1{
+    margin: 8px;
+}
+.experience-platforms{
+    width: 80%;
+    height: fit-content;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: flex-start;
     text-align: center;
     margin: auto;
 }
 .div-platform{
+    width: 50%;
     padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 10px 11px rgb(0, 0, 0,0.30);
+}
+.div-platform p{
+    padding: 7px;
+    width: 70%;
+    margin: auto;
+    border-radius: 7px;
+    height: fit-content;
 }
 .img-logo{
     width: 50px;
+}
+.list-links{
+    padding: 10px;
+    margin: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.link a{
+    text-decoration: none;
+}
+.link{
+    transform: scale(1);
+    transition: transform .2s ease;
+}
+.link:hover{
+    transform: scale(1.02);
+    transition: transform .3s ease;
 }

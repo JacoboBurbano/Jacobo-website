@@ -11,6 +11,7 @@ import {
 import { SkillsPage } from './skills/Skills.tsx';
 import { ProjectsPage } from './projects/Projects.tsx';
 import { ContactPage } from './contact/Contact.tsx';
+import { ExperiencePage } from './experience/Experience.tsx';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
   {
     path: "contact",
     element: <ContactPage/>
+  },
+  {
+    path: "experience",
+    element: <ExperiencePage/>
   }
 ]);
 

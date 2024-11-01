@@ -56,3 +56,14 @@ h1{
   width: 80%;
   margin: auto;
 }
+@media (max-width: 1200px){
+  .section-info{
+    width: 90%;
+  }
+  .div-name-picture{
+    flex-direction: column;
+  }
+  .div-name-picture img{
+    border-radius: 45px;
+  }
+}

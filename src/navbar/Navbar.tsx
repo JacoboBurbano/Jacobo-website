@@ -4,7 +4,7 @@ import { InterfaceItem } from './interface-navbar'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 export const NavBar = () => {
-    const itemsNavbar: InterfaceItem[] = [{name: 'Home', path: '../'}, {name: 'Projects', path: '../projects'}, {name: 'Skills', path: '../skills'}, {name: 'Contact', path: '../contact'}]
+    const itemsNavbar: InterfaceItem[] = [{name: 'Home', path: '../'}, {name: 'Projects', path: '../projects'}, {name: 'Skills', path: '../skills'}, {name: 'Contact', path: '../contact'}, {name: 'Experience', path: '../experience'}]
     return (
         <>
             <NavbarResponsive items={itemsNavbar}/>

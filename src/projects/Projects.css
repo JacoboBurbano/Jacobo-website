@@ -55,3 +55,28 @@
     align-items: center;
     padding: 0;
 }
+@media (max-width: 1200px){
+    .front, .back{
+        backface-visibility:visible;
+    }
+    .back{
+        transform: rotateY(0deg);
+        position: relative;
+    }
+    .project{
+        width: 90%;
+    }
+    .project:hover .info-project{
+        transform: rotateY(0deg);
+    }
+    .info-project div{
+        margin: 0;
+        padding: 0;
+    }
+    .info-project--description{
+        flex-direction: column;
+    }
+    .info-project--description div{
+        width: 80%;
+    }
+}
