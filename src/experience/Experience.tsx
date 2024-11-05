@@ -12,14 +12,12 @@ export const ExperiencePage = () => {
             <div className="separation">
                 <Experience/>
             </div>
-            <div className="div-footer">
-                <Footer/>
-            </div>
+            <Footer/>
         </>
     )
 }
 export const Experience = () => {
-    const platforms: InterfacePlatformStyles[] = [{name: 'Platzi', content: 'La mayoría de mis cursos los realicé en Platzi, plataforma que sigo usando por su enfoque completo en el mundo del desarrollo. Opté por un ritmo de estudio lento pero sólido, complementando cada tema con más investigación y repasos continuos para afianzar bien los conocimientos.', img: PlatziLogo, background: '#2C2F33', color: 'white', links: [{alias: 'Mi perfil', link: 'https://platzi.com/p/MjBubble/'}]}, {name: 'Youtube', content: 'Me apoyé en YouTube, aplicando el mismo método en cursos de creadores como Midudev, Gentleman Programming, La Cocina del Código, Socratica, quienes fueron fundamentales en mi proceso.', img: YoutubeLogo, background: '#FFFFFF', color: 'black', links: [{alias: 'Midudev', link: 'https://www.youtube.com/@midudev'}, {alias: 'Gentleman Programming', link: 'https://www.youtube.com/@GentlemanProgramming'}, {alias: 'Socratica', link: 'https://www.youtube.com/@Socratica'}, {alias: 'La Cocina del Código', link: 'https://www.youtube.com/c/LaCocinadelC%C3%B3digo'}]}, {name: 'Hacker rank', content: 'HackerRank fue clave para mejorar mi lógica de programación, ya que sus ejercicios me permitieron comprender a fondo los conceptos y aplicarlos en la práctica.', img: HackerRankLogo, background: '#27B859', color: 'white', links: [{alias: 'Mi perfil', link: 'https://www.hackerrank.com/profile/jacoboburbano201'}]}]
+    const platforms: InterfacePlatformStyles[] = [{name: 'Platzi', content: 'La mayoría de mis cursos los realicé en Platzi, plataforma que sigo usando por su enfoque completo en el mundo del desarrollo. Opté por un ritmo de estudio lento pero sólido, complementando cada tema con más investigación y repasos continuos para afianzar bien los conocimientos.', img: PlatziLogo, background: '#2C2F33', color: 'white', links: [{alias: 'Mi perfil', link: 'https://platzi.com/p/MjBubble/'}]}, {name: 'Youtube', content: 'Me apoyé en YouTube, aplicando el mismo método en cursos de creadores como Midudev, Gentleman Programming, La Cocina del Código, Socratica, quienes fueron fundamentales en mi proceso.', img: YoutubeLogo, background: '#FFFFFF', color: 'black', links: [{alias: 'Midudev', link: 'https://www.youtube.com/@midudev'}, {alias: 'Gentleman Programming', link: 'https://www.youtube.com/@GentlemanProgramming'}, {alias: 'Socratica', link: 'https://www.youtube.com/@Socratica'}, {alias: 'La Cocina del Código', link: 'https://www.youtube.com/c/LaCocinadelC%C3%B3digo'}]}, {name: 'Hacker rank', content: 'HackerRank fue clave para mejorar mi lógica de programación, ya que sus ejercicios me permitieron comprender a fondo los conceptos y ponerlos en práctica.', img: HackerRankLogo, background: '#27B859', color: 'white', links: [{alias: 'Mi perfil', link: 'https://www.hackerrank.com/profile/jacoboburbano201'}]}]
     return (
         <div className="experience">
             <h1>Experience</h1>

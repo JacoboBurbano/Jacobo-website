@@ -49,4 +49,14 @@
     padding: 0;
 }
 @media (max-width: 1200px){
+    .div-skill{
+        width: 80%;
+    }
+    .tecnologies-list__skill{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .p-content{
+        height: 240px;
+    }
 }

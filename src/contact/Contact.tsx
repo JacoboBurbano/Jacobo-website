@@ -27,9 +27,7 @@ export const ContactPage = () => {
             <div className="separation">
                 <ContactUser/>
             </div>
-            <div className="div-footer">
-                <Footer/>
-            </div>
+            <Footer/>
         </>
     )
 }

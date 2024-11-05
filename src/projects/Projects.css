@@ -64,10 +64,14 @@
         position: relative;
     }
     .project{
-        width: 90%;
+        width: 95%;
     }
     .project:hover .info-project{
         transform: rotateY(0deg);
+    }
+    .info-project{
+        margin: 4px;
+        padding: 5px;
     }
     .info-project div{
         margin: 0;
@@ -78,5 +82,11 @@
     }
     .info-project--description div{
         width: 80%;
+        padding: 10px;
+    }
+    .description p{
+        overflow-y: scroll;
+        height: 200px;
+        padding: 8px;
     }
 }

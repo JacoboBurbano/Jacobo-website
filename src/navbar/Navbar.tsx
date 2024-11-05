@@ -1,5 +1,6 @@
 import './Navbar.css'
 import NavImage from '../images/nav.png'
+import MenuImage from '../images/menu.png'
 import { InterfaceItem } from './interface-navbar'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
@@ -19,6 +20,19 @@ const NavbarDefault = ({items}: {items: InterfaceItem[]}) => {
                 {items.map((item, index) => (
                     <Item name={item.name} path={item.path} key={index}/>
                 ))}
+                <li id='menu-button'>
+                    <img src={MenuImage} alt="menu"/>
+                    <div className='div-language' style={{display: 'none'}}>
+                        <ul>
+                            <li>
+                                <p>Spanish</p>
+                            </li>
+                            <li>
+                                <p>English</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
         </nav>
     )

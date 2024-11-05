@@ -24,10 +24,9 @@ const Project = ({title, content,img, link, tecnologies, color, background}: {ti
             <div className='project'>
             <div className="info-project">
                 <div className='info-project--image front' style={{color, background}}>
-                    <h2>{title}</h2>
                     <img src={img} alt="project-capture" />
                 </div>
-                <div className='info-project--description back' style={{backgroundImage: `url(${img})`, backgroundSize: 'cover', width: '100%'}}>
+                <div className='info-project--description back' style={{width: '100%', background}}>
                     <div className='description' style={{color, background}}>
                         <h2>{title}</h2>
                         <hr />

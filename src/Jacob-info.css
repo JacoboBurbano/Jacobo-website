@@ -66,4 +66,11 @@ h1{
   .div-name-picture img{
     border-radius: 45px;
   }
+  .section-experience{
+    width: 90%;
+    margin: auto;
+  }
+  .section-contact{
+    width: 100%;
+  }
 }
