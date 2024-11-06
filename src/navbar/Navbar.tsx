@@ -1,11 +1,14 @@
 import './Navbar.css'
 import NavImage from '../images/nav.png'
-import MenuImage from '../images/menu.png'
 import { InterfaceItem } from './interface-navbar'
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { handleClick } from '../Utils'
+import { LanguageContext } from '../language/Language'
 export const NavBar = () => {
     const itemsNavbar: InterfaceItem[] = [{name: 'Home', path: '../'}, {name: 'Projects', path: '../projects'}, {name: 'Skills', path: '../skills'}, {name: 'Contact', path: '../contact'}, {name: 'Experience', path: '../experience'}]
+    const language = useContext(LanguageContext)
+    console.log(language)
     return (
         <>
             <NavbarResponsive items={itemsNavbar}/>
@@ -20,40 +23,17 @@ const NavbarDefault = ({items}: {items: InterfaceItem[]}) => {
                 {items.map((item, index) => (
                     <Item name={item.name} path={item.path} key={index}/>
                 ))}
-                <li id='menu-button'>
-                    <img src={MenuImage} alt="menu"/>
-                    <div className='div-language' style={{display: 'none'}}>
-                        <ul>
-                            <li>
-                                <p>Spanish</p>
-                            </li>
-                            <li>
-                                <p>English</p>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
             </ul>
         </nav>
     )
 }
 const NavbarResponsive = ({items}: {items: InterfaceItem[]}) => {
-    let [isVisible, setVisible] = useState<'invisible'|'visible'>('invisible')
-    const handleClick = () => {
-        switch (isVisible) {
-            case 'invisible':
-                setVisible('visible');
-                break;
-            default:
-                setVisible('invisible');
-                break;
-        }
-    };
+    let [isVisible, setVisible] = useState<boolean>(false)
     return (
         <nav>
             <ul className="navbar-list__responsive">
-                <img src={NavImage} alt="" className='nav-image' onClick={handleClick}/>
-                <div className={`div-items ${isVisible}`}>
+                <img src={NavImage} alt="" className='nav-image' onClick={handleClick(isVisible, setVisible)}/>
+                <div className={`div-items ${isVisible ? 'visible' : 'invisible '}`}>
                     {items.map((item, index) => (
                         <Item name={item.name} path={item.path} key={index}/>
                     ))}

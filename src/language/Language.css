@@ -1,0 +1,23 @@
+.div-languages{
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    right: 4px;
+    position: fixed;
+    z-index: 500;
+    direction: inherit;
+}
+.button-language{
+    position: absolute;
+}
+/* .div-languages{
+    position: absolute;
+    padding: 5px;
+    margin: 5px;
+} */
+.hidden{
+    display: none;
+}
+.not-hidden{
+    display: block;
+}
