@@ -38,7 +38,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <Language/>
-    <RouterProvider router={router}/>
-  </React.StrictMode>,
+    <Language>
+      <RouterProvider router={router}/>
+    </Language>
+  </React.StrictMode>
 )

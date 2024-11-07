@@ -1,19 +1,21 @@
 import './Navbar.css'
 import NavImage from '../images/nav.png'
 import { InterfaceItem } from './interface-navbar'
-import { useContext, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { handleClick } from '../Utils'
 import { LanguageContext } from '../language/Language'
 export const NavBar = () => {
-    const itemsNavbar: InterfaceItem[] = [{name: 'Home', path: '../'}, {name: 'Projects', path: '../projects'}, {name: 'Skills', path: '../skills'}, {name: 'Contact', path: '../contact'}, {name: 'Experience', path: '../experience'}]
     const language = useContext(LanguageContext)
-    console.log(language)
+    let [itemsNavbar, setItemsNavbar] = useState<InterfaceItem[]>([])
+    useEffect(() => {
+        language == 'en' ? setItemsNavbar([{name: 'Home', path: '../'}, {name: 'Projects', path: '../projects'}, {name: 'Skills', path: '../skills'}, {name: 'Contact', path: '../contact'}, {name: 'Experience', path: '../experience'}]): setItemsNavbar([{name: 'Inicio', path: '../'}, {name: 'Proyectos', path: '../projects'}, {name: 'Habilidades', path: '../skills'}, {name: 'Contacto', path: '../contact'}, {name: 'Experiencia', path: '../experience'}])
+    }, [language])
     return (
-        <>
-            <NavbarResponsive items={itemsNavbar}/>
-            <NavbarDefault items={itemsNavbar}/>
-        </>
+            <>
+                <NavbarResponsive items={itemsNavbar}/>
+                <NavbarDefault items={itemsNavbar}/>
+            </>
     )
 }
 const NavbarDefault = ({items}: {items: InterfaceItem[]}) => {
