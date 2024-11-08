@@ -2,22 +2,24 @@
     margin: 15px;
     display: flex;
     justify-content: center;
-    right: 4px;
+    right: 20px;
     position: fixed;
     z-index: 500;
     direction: inherit;
 }
 .button-language{
     position: absolute;
+    background: none;
+    border: none;
 }
-/* .div-languages{
-    position: absolute;
-    padding: 5px;
-    margin: 5px;
-} */
 .hidden{
     display: none;
 }
 .not-hidden{
     display: block;
+}
+@media (max-width: 1200px){
+    .div-languages{
+        top: 0px;
+    }
 }

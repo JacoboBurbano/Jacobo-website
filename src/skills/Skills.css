@@ -1,8 +1,14 @@
+.div-skills{
+    text-align: center;
+}
 .skills{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
+}
+.title-skills{
+    margin: 12px;
 }
 .div-skill{
     display: grid;

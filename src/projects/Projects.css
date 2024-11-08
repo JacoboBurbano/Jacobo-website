@@ -2,6 +2,12 @@
     padding-top: 1rem;
     margin-top: 2.5rem;
 }
+.div-projects{
+    text-align: center;
+}
+.title-projects{
+    margin: 12px;
+}
 .project{
     display: flex;
     flex-direction: column;
