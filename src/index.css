@@ -13,8 +13,13 @@
   --lemon-layer-10: #f5eacd;
   --lemon-layer-11: #fcd6a8;
 }
+html, body {
+  margin: 0;
+  padding: 0;
+}
 body{
   background: var(--lemon-layer-3);
+  position: relative;
 }
 /* Estilo del scrollbar en general */
 ::-webkit-scrollbar {
@@ -30,11 +35,11 @@ body{
 
 /* Estilo del thumb (la parte que se mueve) */
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: var(--lemon-layer-11); 
   border-radius: 10px;
 }
 
 /* Estilo del thumb al pasar el cursor sobre él */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: var(--lemon-layer-11); 
 }

@@ -32,7 +32,7 @@ const NavbarDefault = ({items}: {items: InterfaceItem[]}) => {
 const NavbarResponsive = ({items}: {items: InterfaceItem[]}) => {
     let [isVisible, setVisible] = useState<boolean>(false)
     return (
-        <nav>
+        <nav className='navbar'>
             <ul className="navbar-list__responsive">
                 <img src={NavImage} alt="" className='nav-image' onClick={handleClick(isVisible, setVisible)}/>
                 <div className={`div-items ${isVisible ? 'visible' : 'invisible '}`}>

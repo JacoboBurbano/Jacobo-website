@@ -11,6 +11,10 @@
     position: absolute;
     background: none;
     border: none;
+    cursor: pointer;
+}
+.img-language{
+    width: 50px;
 }
 .hidden{
     display: none;
@@ -21,5 +25,6 @@
 @media (max-width: 1200px){
     .div-languages{
         top: 0px;
+        right: 40px;
     }
 }

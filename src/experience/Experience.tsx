@@ -45,7 +45,9 @@ const Platform = ({platform} : {platform: InterfacePlatformStyles}) => {
                 <ul className="list-links">
                     {platform.links.map(link => 
                         <li className="link">
-                            <a href={link.link} target="_blank" style={{color: platform.color}}>{link.alias}</a>
+                            <a href={link.link} target="_blank" style={{color: platform.color}}>
+                                {link.alias}
+                            </a>
                         </li>
                     )}
                 </ul>

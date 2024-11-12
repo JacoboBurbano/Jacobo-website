@@ -4,7 +4,8 @@ import './Contact.css'
 import { Footer } from "../footer/Footer"
 import { useContext, useEffect, useState } from "react"
 import { LanguageContext } from "../language/Language"
-import Gmail from '../images/gmail-not-hover.png'
+import GmailNotHover from '../images/gmail-not-hover.png'
+import GmailHover from '../images/gmail-hover.png'
 
 export const Contact = ({img, link}: {img:string, link:string}) => {
     return (
@@ -14,6 +15,7 @@ export const Contact = ({img, link}: {img:string, link:string}) => {
     )
 }
 export const ContactUser = () => {
+    let [hover, setHover] = useState<{image: string, classProperty: string}>({image: GmailNotHover, classProperty: 'not-hover'})
     let [info, setInfo] = useState<string>('')
     const language = useContext(LanguageContext)
     useEffect(() => {
@@ -25,9 +27,15 @@ export const ContactUser = () => {
             <p className="content-contact">{info}</p>
             <big className="arrow-contact">⇣</big>
             <div className="div-gmail">
-                <button className="button-gmail">
-                    <img src={Gmail} alt="" />
-                </button>
+                <a href="mailto:jacoboburbano2004@gmail.com">
+                    <button className={`button-gmail ${hover.classProperty}`} onMouseOver={() => {
+                        setHover({image: GmailHover, classProperty: 'hover'})
+                    }} onMouseLeave={() => {
+                        setHover({image: GmailNotHover, classProperty: 'not-hover'})
+                    }}>
+                        <img src={hover.image} alt="" className="img-gmail"/>
+                    </button>
+                </a>
             </div>
             <SocialNetworks/>
         </div>

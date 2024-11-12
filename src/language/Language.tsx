@@ -15,10 +15,10 @@ export const Language = ({children}: {children: JSX.Element}) => {
             <div className="separation">
             <div className="div-languages">
                 <button className={`button-language ${isHidden ? 'hidden': 'not-hidden'}`} onClick={handleClick(isHidden, setHidden)}>
-                    <img src={EnglishLogo} alt="en" />
+                    <img src={EnglishLogo} alt="en" className="img-language"/>
                 </button>
                 <button className={`button-language ${!isHidden ? 'hidden': 'not-hidden'}`} onClick={handleClick(isHidden, setHidden)}>
-                    <img src={SpanishLogo} alt="es" />
+                    <img src={SpanishLogo} alt="es" className="img-language"/>
                 </button>
             </div>
         </div>
