@@ -5,7 +5,6 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 100%;
 }
 .title-skills{
     margin: 12px;
@@ -46,6 +45,7 @@
     height: 140px;
     overflow: scroll;
     padding: 7px;
+    text-align: start;
 }
 .tecnologies-list__skill{
     list-style: none;

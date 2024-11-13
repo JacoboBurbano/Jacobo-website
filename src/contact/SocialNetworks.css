@@ -8,9 +8,10 @@
   .list-social-networks li{
     padding: 5px;
     border-radius: 9999px;
-    transition: background .7s ease;
+    transform: translateY(0px);
+    transition: transform .6s ease;
   }
   .list-social-networks li:hover{
-    background: var(--lemon-layer-8);
-    transition: background 1s ease;
+    transform: translateY(-4px);
+    transition: transform .4s ease;
   }
