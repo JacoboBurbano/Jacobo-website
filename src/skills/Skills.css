@@ -54,9 +54,18 @@
     align-items: center;
     padding: 0;
 }
-@media (max-width: 1200px){
+@media (max-width: 1000px){
     .div-skill{
         width: 80%;
+        display: block;
+    }
+    .title-skill h4{
+        transform: rotate(0);
+        margin: 8px;
+        font-size: larger;
+    }
+    .title-skill hr{
+        display: none;
     }
     .tecnologies-list__skill{
         flex-wrap: wrap;

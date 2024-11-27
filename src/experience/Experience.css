@@ -23,7 +23,7 @@
 }
 .content-platform{
     padding: 7px;
-    width: 70%;
+    width: 90%;
     margin: auto;
     border-radius: 7px;
     height: fit-content;
@@ -44,13 +44,13 @@
 .link{
     padding: 4px;
     transform: scale(1);
-    transition: transform .2s ease;
+    transition: transform .6s ease;
 }
 .link:hover{
     transform: scale(1.02);
-    transition: transform .3s ease;
+    transition: transform .4s ease;
 }
-@media (max-width: 1200px){
+@media (max-width: 1000px){
     .experience-platforms{
         width: 100%;
         flex-direction: column;
