@@ -4,12 +4,12 @@
     justify-content: center;
     width: 75%;
     text-align: center;
-    margin: 30px auto;
-    padding: 15px;
+    margin: auto;
+    padding-top: 3rem;
     border: 1px solid var(--lemon-layer-1);
 }
 .title-contact{
-    margin: 12px;
+    margin-bottom: 12px;
 }
 .content-contact{
     margin: 7px;

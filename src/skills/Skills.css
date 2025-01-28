@@ -1,4 +1,5 @@
 .div-skills{
+    padding-top: 3rem;
     text-align: center;
 }
 .skills{
@@ -7,7 +8,7 @@
     flex-direction: row;
 }
 .title-skills{
-    margin: 12px;
+    margin-bottom: 12px;
 }
 .div-skill{
     display: grid;

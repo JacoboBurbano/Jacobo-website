@@ -9,7 +9,7 @@ export const NavBar = () => {
     const language = useContext(LanguageContext)
     let [itemsNavbar, setItemsNavbar] = useState<InterfaceItem[]>([])
     useEffect(() => {
-        language == 'en' ? setItemsNavbar([{name: 'Home', path: '../'}, {name: 'Projects', path: '../projects'}, {name: 'Skills', path: '../skills'}, {name: 'Experience', path: '../experience'}, {name: 'Contact', path: '../contact'}]): setItemsNavbar([{name: 'Inicio', path: '../'}, {name: 'Proyectos', path: '../projects'}, {name: 'Habilidades', path: '../skills'}, {name: 'Contacto', path: '../contact'}, {name: 'Experiencia', path: '../experience'}])
+        language == 'en' ? setItemsNavbar([{name: 'Home', path: '../'}, {name: 'Projects', path: '../projects'}, {name: 'Skills', path: '../skills'}, {name: 'Experience', path: '../experience'}, {name: 'Contact', path: '../contact'}]): setItemsNavbar([{name: 'Inicio', path: '../'}, {name: 'Proyectos', path: '../projects'}, {name: 'Habilidades', path: '../skills'}, {name: 'Experiencia', path: '../experience'}, {name: 'Contacto', path: '../contact'}])
     }, [language])
     return (
             <>

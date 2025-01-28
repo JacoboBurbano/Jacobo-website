@@ -1,9 +1,9 @@
 .experience{
+    padding-top: 3rem;
     text-align: center;
-    margin: 20px;
 }
 .experience h1{
-    margin: 8px;
+    margin-bottom: 12px;
 }
 .experience-platforms{
     width: 80%;
