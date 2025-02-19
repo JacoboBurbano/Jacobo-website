@@ -91,6 +91,10 @@
         width: 80%;
         padding: 10px;
     }
+    .info-project--image img{
+        width: 95%;
+        padding: 20px;
+    }
     .description p{
         overflow-y: hidden;
         height: 200px;
