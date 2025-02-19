@@ -22,7 +22,7 @@ export const Info = () => {
         <div className='div-personal-info'>
             <div className='div-name-picture'>
                 <img src={PerfilPicture} alt="" />
-                <h2 style={{padding:'6px'}}>Manuel Jacobo Burbano Jimenez</h2>
+                <h2 style={{padding:'6px'}}>Manuel Jacobo Burbano Jiménez</h2>
             </div>
             <p>{mainInfo}</p>
         </div>
