@@ -49,7 +49,7 @@ export const Projects = () => {
     }, [language])
     return (
         <div className='div-projects'>
-            <h1 className='title-projects'>{language == 'es' ? 'Projectos': 'Projects'}</h1>
+            <h1 className='title-projects'>{language == 'es' ? 'Proyectos': 'Projects'}</h1>
             {projects.map(project => 
                 <Project title={project.title} content={project.content} img={project.img} link={project.link} tecnologies={project.tecnologies} color={project.color} background={project.background} key={project.title}/>
             )}
